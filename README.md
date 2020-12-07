@@ -1,8 +1,8 @@
 
-# **Read me Generator**
+# **Read Me Generator**
 
 ## Description 
-Read Me Generator is a CLI application that allows the user to create polished and professional Read Me files for their Github repositories 
+Read Me Generator is a CLI application that allows the user to create polished and professional Read Me files for Github repositories 
 ## Table of contents
 - [Description](#Description)
 - [Installation](#Installation)
@@ -13,11 +13,11 @@ Read Me Generator is a CLI application that allows the user to create polished a
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 ## Installation
-        1) Clone the ReadMe Generator repo 2) Do an npm install 3) Start the app with node index.js 
+1) Clone the ReadMe Generator repository 2) Do an npm install 3) Start the application with the command node index.js 
 ## Usage
-This app is for all developers looking to create Github readmes
-## Licence
-
+This app is for all developers looking to create Github readmes. It makes Readme writing more efficient by allowin
+## License
+ISC 
 ## Contributors
 
 ## Test
@@ -25,7 +25,6 @@ This app is for all developers looking to create Github readmes
 ## Repository
 - [Project Repo](https://github.com/preronam/ReadMeGen)
 ## GitHub
-![Image of me](https://avatars1.githubusercontent.com/u/65363837?v=4)
 - Prerona Mukherjee 
 - [GitHub Profile](https://github.com/preronam)
 - <null>
