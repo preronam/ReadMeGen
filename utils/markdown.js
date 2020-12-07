@@ -26,7 +26,6 @@ ${data.test}
 ## Repository
 - [Project Repo](${data.repo})
 ## GitHub
-![Image of me](${githubInfo.githubImage})
 - ${githubInfo.name}
 - [GitHub Profile](${githubInfo.profile})
 - <${githubInfo.email}>

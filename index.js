@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const axios = require("axios");
-const generate = require('./utils/markdown');
+const markdown = require('./utils/markdown');
 
 const questions = [
     {
@@ -9,11 +9,7 @@ const questions = [
         name: "title",
         message: "What is your project title?"
     },
-    {
-        type: "input",
-        name: "badge",
-        message: "Please provide the badges links that you want"
-    },
+
     {
         type: "input",
         name: "description",
@@ -32,12 +28,12 @@ const questions = [
     {
         type: "input",
         name: "licence",
-        message: "Please provide the project licence or your badge link"
+        message: "Please provide the project license or your badge link"
     },
     {
         type: "input",
         name: "contributing",
-        message: "Please provide the contributing parties"
+        message: "Please list any contributors"
     },
     {
         type: "input",
@@ -64,18 +60,17 @@ inquirer
         axios.get(queryUrl).then(function(res) {
             
             const githubInfo = {
-                githubImage: res.data.avatar_url,
                 email: res.data.email,
                 profile: res.data.html_url,
                 name: res.data.name
             };
             
-          fs.writeFile("README.md", generate(data, githubInfo), function(err) {
+          fs.writeFile("README.md", markdown(data, githubInfo), function(err) {
             if (err) {
               throw err;
             };
     
-            console.log("New README file created with success!");
+            console.log("New README file created sucessfully!");
           });
         });
 
